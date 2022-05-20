@@ -17,7 +17,7 @@ public class DemoInitialApplication {
     @RequestMapping("/hello")
     @ResponseBody
     String hello() {
-        return "Hello World ";
+        return "Hello World ok";
     }
 
     @RequestMapping("/goodbye")
