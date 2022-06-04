@@ -8,11 +8,10 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import javax.annotation.PostConstruct;
 import java.util.Arrays;
 
-@Controller
+// @Controller
 @SpringBootApplication
 public class DemoInitialApplication implements HasLogger {
 
@@ -29,16 +28,16 @@ public class DemoInitialApplication implements HasLogger {
         getLogger().info("Active Profiles: " + Arrays.toString(env.getActiveProfiles()) + "\n\n");
     }
 
-    @RequestMapping("/hello")
-    @ResponseBody
-    String hello() {
-        return "Hello World ok";
-    }
-
-    @RequestMapping("/goodbye")
-    @ResponseBody
-    String goodbye() {
-        return "Goodbye ";
-    }
+//    @RequestMapping("/hello")
+//    @ResponseBody
+//    String hello() {
+//        return "Hello World ok";
+//    }
+//
+//    @RequestMapping("/goodbye")
+//    @ResponseBody
+//    String goodbye() {
+//        return "Goodbye ";
+//    }
 
 }

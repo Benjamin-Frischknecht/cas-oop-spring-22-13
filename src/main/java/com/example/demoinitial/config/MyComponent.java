@@ -1,7 +1,6 @@
 package com.example.demoinitial.config;
 
 import com.example.demoinitial.domain.Person;
-import com.example.demoinitial.utils.HasLogger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -33,4 +32,5 @@ public class MyComponent {
         person.setLastName("Mustermann");
         return person;
     }
+
 }
